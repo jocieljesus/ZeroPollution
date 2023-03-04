@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background: linear-gradient(#303030 , #404040, #282828);
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#menu{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    color: #c9c9c9;
+    font-size: 1.2em;
+    font-family:  
+     sans-serif;
+}
+
+main{
+
+   display: flex;
+    justify-content: space-around;
+    column-gap: 100px;
+    color: #282828;
+    padding: 200px;
+    background-image: url("/img/textura.jpg");
+}
+
+a:hover{
+    font-size: 1.2em;
+    color: #fff;
+}
+
+h1{
+    font-size: 2.5em;
+    font-family:  sans-serif;
+}
