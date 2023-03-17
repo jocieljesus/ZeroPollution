@@ -6,6 +6,7 @@
 
 header {
     background: linear-gradient(#303030 , #404040, #282828);
+    /*background: linear-gradient( #253531 ,   #094d3c,  #0f332c);*/
     height: 100px;
     width: 100%;
     position: absolute;
@@ -14,6 +15,9 @@ header {
     justify-content: space-between;
 }
 
+#espaco-logo {
+    margin-left: 50px;
+}
 
 #menu{
     width: 50%;
@@ -28,13 +32,14 @@ header {
 }
 
 main{
-
-   display: flex;
-    justify-content: space-around;
     column-gap: 100px;
     color: #282828;
     padding: 200px;
     background-image: url("/img/textura.jpg");
+}
+a{
+    text-decoration: none;
+    color: #c9c9c9;
 }
 
 a:hover{
@@ -45,4 +50,8 @@ a:hover{
 h1{
     font-size: 2.5em;
     font-family:  sans-serif;
+}
+
+.bg-body-secondary{
+    background-color: black; 
 }
