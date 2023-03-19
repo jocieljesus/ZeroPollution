@@ -1,88 +1,315 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>Zero Pollution</title>
-</head>
+    <link rel="icon" href="img/logo-ZP.png">
+    <!--Materialize-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <link rel="stylesheet" href="css/custom.css">
+    <!--Fonts google-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
 <body>
     <header>
-        <div id="espaco-logo">
-            <img src="./img/logo-ZeroPollution.png" width="105px" alt="">
+        <!--MENU MOBILE-->
+        <ul id="mobile-demo" class="sidenav" >
+            <li><a class="sidenav-close" href="#home"> Home </a></li>
+            <li><a class="sidenav-close" href="#registros"> Registros </a></li>
+            <li><a class="sidenav-close" href="#nova-ocorrencia"> Nova Ocorrência </a></li>
+            <li><a class="sidenav-close" href="#acompanhamento"> Acompanhamento </a></li>
+            <li><a class="sidenav-close"  ref="#Perfil"> Perfil </a></li>
+        </ul>   
+        
+
+        <div class=" navbar-fixed ">
+            <nav class="navbar z-depth-2">
+                <div class="nav-wrapper container">
+                    <a href="#"> <img class="logo-img left" src="img/logo-ZeroPollution.png"></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#home"> Home </a></li>
+                        <li><a href="#registros"> Registros </a></li>
+                        <li><a href="#nova-ocorrencia"> Nova Ocorrência </a></li>
+                        <li><a href="#acompanhamento"> Acompanhamento </a></li>
+                        <li><a href="#Perfil"> Perfil  </a></li>
+                    </ul>                  
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons"> menu</i></a>
+
+                </div>
+            </nav>
         </div>
-        <div id="menu">
-            <a href="#" >Home </a>
-            <a href="#nova-ocorrencia">Nova Ocorrência</a>
-            <a>Acompanhamento</a>
-            <a>Registros</a>
-            <a>Perfil</a>
-            </ol>
     </header>
-    <main>
-        <div class="row g-0 bg-body-secondary position-relative">
-            <div class="col-md-6 mb-md-0 p-md-4">
-                <img src="./img/Pollution-remove.png" class="w-100" alt="...">
-            </div>
-            <div class="col-md-6 p-4 ps-md-0">
-                <h3 class="mt-0">Zero Pollution</h3>
+    <!-- HOME -->
+    <section class="home bloco scrollspy" id="home">
+        <div class="row container banner">
+            <div class="col s12 l6">
+                <h2>Zero Pollution </h2>
+                <br>
                 <p>A poluição pode ser definida, de maneira simplificada, como alterações no ambiente que podem provocar
-                prejuízos aos seres vivos daquele local bem como aos seres humanos e suas atividades econômicas. A
-                poluição pode causar alterações físicas, químicas ou biológicas no meio e pode ser consequência, por
-                exemplo, da ação humana.</p>
-                <p>Existem diferentes tipos de poluição, destacando-se a atmosférica, a da água e a do solo. Apesar de ser
-                fundamental a criação de políticas públicas que garantam a proteção do meio ambiente, todos nós podemos
-                fazer nossa parte para evitar a poluição, reduzindo, por exemplo, o nosso consumo e garantindo o
-                descarte adequado do lixo.</p>
-            </div>  
+                    prejuízos aos seres vivos daquele local bem como aos seres humanos e suas atividades econômicas. A
+                    poluição pode causar alterações físicas, químicas ou biológicas no meio e pode ser consequência, por
+                    exemplo, da ação humana.</p>
+            </div>
+            <div class="col s12 l6 " >
+                <img src="./img/Pollution-remove.png"  alt="">
+            </div> 
         </div>
-        <br>
-        <br>
-        <div id="nova-ocorrencia" class="row g-0  position-relative center">
-            <h2> Nova Ocorrência</h2>
-            <form class="row g-3">
-                <div class="col-8">
-                    <label for="inputState" class="form-label">Tipo de Ocorrência</label>
-                    <select id="inputState" class="form-select">
-                      <option selected>Selecione a Ocorrência</option>
-                      <option>Poluição da Água</option>
-                      <option>Poluição da Terra</option>
-                      <option>Poluição do Ar</option>
-                      <option>Poluição Geral </option>
-                    </select>
-                </div>
-                <div class="col-md-6">
-                <img src="./img/image.png" alt="" width="200px">
-                <input type="file" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                    </div>
-                <div class="col-md-8">                    
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d62386.06759864819!2d-38.96175697568144!3d-12.239528439549495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1679074418507!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-                <div class="col-md-8">
-                    <label for="exampleFormControlTextarea1" class="form-label">Descreva o que você vê:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </section>
+    <!-- REGISTROS -->
+    <section class="registros bloco scrollspy" id="registros">
+          <div class="row container">
+              <div class=" col s12 ">
+                  <h2 >Registros</h2>
+              </div>
+              
+              <div class="col s12 l6">
+                  <div class="carousel carousel-slider border" data-indicators="true" >
+                      <a href="#" class="carousel-item"><img src="img/poluição-da-água.jpg"  ></a>
+                      <a href="#" class="carousel-item"><img src="img/poluição-de-terra.jpg" ></a>
+                      <a href="#" class="carousel-item"><img src="img/poluição ar.jpg"  ></a>
+                      <a href="#" class="carousel-item"><img src="img/poluição terra.jpg"></a>
                   </div>
-                <div class="col-8">
-                  <button type="submit" class="btn btn-danger">Cancelar Registro</button>
-                  <button type="submit" class="btn btn-primary">Registrar Ocorrência</button>
+            </div>
+            <div class="col s12 l6">
+                <p class="texto_justificado"> 
+                  Existem diferentes tipos de poluição, destacando-se a atmosférica, a da água e a do solo. Apesar de ser
+              fundamental a criação de políticas públicas que garantam a proteção do meio ambiente, todos nós podemos
+              fazer nossa parte para evitar a poluição, reduzindo, por exemplo, o nosso consumo e garantindo o
+              descarte adequado do lixo.
+              Focos de poluição continuam sendo registrados em toda a cidade de feira de santana,
+                   é notório que nossa contribuição pode alarmar o poder público, precisamos de sua ajuda, faça como todos esses que registraram focos de poluição.</p>
+            </div>
+          </div>
+    </section>
+      <!-- Nova Ocorrência -->
+      <section class="nova-ocorrencia bloco scrollspy" id="nova-ocorrencia">
+        <div class="row container">
+            <div class=" col s12 ">
+               <h2>Nova Ocorrência</h2>
+            </div>
+            <div class=" col s12 l6 ">
+                <div class="formulario white  black-text">
+                    <h4>Registre sua Ocorrência</h4>
+                    <form action="" method="POST" >
+                        <div class="input-field">
+                            <input type="text" name="name" id="name">
+                            <label for="name">Nome</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="email" name="email" id="email">
+                            <label for="name">Email </label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="telefone" id="telefone" placeholder="75999999999">
+                            <label for="telefone">Telefone</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="tipo" id="tipo">
+                            <label for="tipo">Tipo de Ocorrência </label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="descricao" id="descricao">
+                            <label for="descricao"> Descrição </label>
+                        </div>
+
+                        <div class="input-field">
+                            <input id='input-file' type='file' value='' />
+                            <label for='input-file' id="input-file">
+                                <i class="large material-icons">add_a_photo</i>
+                            </label> 
+                        </div>
+                        
+                        <button class="btn blue-logo" type="submit">Cancelar</button>
+                        <button class="btn blue-logo" type="submit">Registrar</button>
+
+                    </form>
                 </div>
-              </form>
-
+            </div>
+         
+            <div class=" col s12 l6 ">
+                <div class=" mapa transparent"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.894323315046!2d-38.96496858561479!3d-12.25543014915296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7143790361def1d%3A0xc509cdd144894ccc!2sR.%20Bar%C3%A3o%20de%20Cotegipe%20-%20Centro%2C%20Feira%20de%20Santana%20-%20BA%2C%2040301-110!5e0!3m2!1spt-BR!2sbr!4v1587232199816!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> </div>
+                <button class="btn blue-logo" type="submit">Capturar Localização</button>
+            </div>
+         
         </div>
+    </section>
+    <!-- Acompanhamento -->
+    <section class="acompanhamento bloco scrollspy" id="acompanhamento">
+          <div class="row container ">
+              <div class="col s12">
+                  <h2>Acompanhamento</h2>  
+              </div>
+          </div>
+          <div class="row container">
+            <!-- Acompanhamento -->
+            <article class="col s6 m4 l3">
+                <div class="card">
+                    <div class="card-image">
+                      <img src="./img/lixo-incorreto.jpeg"  class="materialboxed" width="100%">
+                      <a href="#acp1-modal" class="btn btn-floating  halfway-fab blue-logo modal-trigger">
+                          <i class="material-icons">more_horiz</i>
+                      </a>
+                    </div>
+                    <div class="card-content">
+                      <h5>Foco de Poluição</h5>
+                      <p>Rua Angra dos Reis, 
+                        Bairro Lagoa Grande
+                        Feira de Santana - Ba
+                        CEP 44100-000
+                      </p>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal" id="acp1-modal">
+                    <div class="modal-content">
+                      <h3> Lixo descartado incorretamente </h3>
+                        <img src="img/lixo-incorreto.jpeg" width="100%">
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" class="btn btn-modal modal-action modal-close"> Ver Progresso </a>
+                    </div>
+                </div>
+            </article>
+             <!-- Acompanhamento -->
+             <article class="col s6 m4 l3">
+                <div class="card">
+                    <div class="card-image">
+                      <img src="./img/queimada.jpeg"  class="materialboxed" width="100%">
+                      <a href="#acp2-modal" class="btn btn-floating  halfway-fab blue-logo modal-trigger">
+                          <i class="material-icons">more_horiz</i>
+                      </a>
+                    </div>
+                    <div class="card-content">
+                      <h5>Foco de Queimada</h5>
+                      <p>Rua Gameleira, 
+                        Bairro Conceição
+                        Feira de Santana - Ba
+                        CEP 44300-00
+                      </p>
+                    </div>
+                </div>
+                <!-- MODAL -->
+                <div class="modal" id="acp2-modal">
+                    <div class="modal-content">
+                      <h3> Foco de Queimada </h3>
+                        <img src="img/queimada.jpeg" width="100%">
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" class="btn btn-modal modal-action modal-close"> Ver Progresso </a>
+                    </div>
+                </div>
+            </article>
+             <!-- Acompanhamento -->
+             <article class="col s6 m4 l3">
+                <div class="card">
+                    <div class="card-image">
+                      <img src="./img/lixo-rio.jpg"  class="materialboxed" width="100%">
+                      <a href="#acp3-modal" class="btn btn-floating  halfway-fab blue-logo modal-trigger">
+                          <i class="material-icons">more_horiz</i>
+                      </a>
+                    </div>
+                    <div class="card-content">
+                      <h5>Foco de Poluição Rio</h5>
+                      <p>Rua da Concórdia, 
+                        Bairro Caseb
+                        Feira de Santana - Ba
+                        CEP 44800-000
+                      </p>
+                    </div>
+                </div>
+                      <!-- MODAL -->
+                <div class="modal" id="acp3-modal">
+                    <div class="modal-content">
+                      <h3> Lixo no Rio </h3>
+                        <img src="img/lixo-rio.jpg" width="100%">
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" class="btn btn-modal modal-action modal-close"> Ver Progresso </a>
+                    </div>
+                </div>
+            </article>
+             <!-- Acompanhamento -->
+             <article class="col s6 m4 l3">
+                <div class="card">
+                    <div class="card-image">
+                      <img src="./img/lixo-estrada.jpg"  class="materialboxed" width="100%">
+                      <a href="#acp4-modal" class="btn btn-floating  halfway-fab blue-logo modal-trigger">
+                          <i class="material-icons">more_horiz</i>
+                      </a>
+                    </div>
+                    <div class="card-content">
+                      <h5>Lixo na Estrada</h5>
+                      <p>Av Iguatemi, 
+                        Bairro Mangabeira
+                        Feira de Santana - Ba
+                        CEP 44100-000
+                      </p>
+                    </div>
+                </div>
+                      <!-- MODAL -->
+                <div class="modal" id="acp4-modal">
+                    <div class="modal-content">
+                      <h3> Lixo na Estrada </h3>
+                        <img src="img/lixo-estrada.jpg" width="700px">
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" class="btn btn-modal modal-action modal-close"> Ver Progresso </a>
+                    </div>
+                </div>
+            </article>
+           
+         
+          </div>
+    </section>
+  
+    <!--RODAPÉ -->
+    <footer class="rodape">
+        <div class="row container center">
+            <img src="img/logo-ZeroPollution.png"  class="logo-rodape"  >
+            <p class="white-text"> © Zero Pollution 2023 - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+        <!--Codigo JavaScript-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--JQUERY-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script><!--MATERIALIZE-->
+       <!--Java Script-->
+       <script>
+            
+    $('.sidenav').sidenav();
+            //INICIALIZAÇÃO
+            $(document).ready(function(){
+                $(".scrollspy").scrollSpy({
+                    scrollOffset:0
+                });
+                //CAROUSEL DE IMAGENS
+                $(".carousel.carousel-slider").carousel({
+                    fullwidth:true
+                });
+                // MODAL
+                $(".modal").modal();
+                //MENU MOBILE
+                $('.sidenav').sidenav();
+                //TABS
+                $("ul.tabs").tabs();
+                //AUTOPLAY
+                function autoplay(){
+                    $(".carousel").carousel("next");
+                    setTimeout(autoplay, 3000);
+                }
+                autoplay();
 
-       
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
- 
+            });
+            //ADICIONANDO NAV-COLOR
+            $(window).on("scroll", function(){
+                if ($(window).scrollTop()>100){
+                    $(".navbar").addClass("nav-color");
+                } else {
+                    $(".navbar").removeClass("nav-color");
+                }
+            });
+        </script>
 </body>
-
 </html>

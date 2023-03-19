@@ -1,0 +1,141 @@
+html, body { height: 100%;}
+.bloco{  min-height: 100%; padding-top: 94px;}
+/*
+body{background-color:rgb(197, 197, 197) ;}*/
+.container h2{ font-size: 2rem; text-transform: uppercase; font-weight: 500; }
+body{ background-image: url("../img/plano.png"); color:whitesmoke;}
+/* LOGO */
+.logo-text{ font-size: 0; margin: 0;}
+.logo-img{width: 100px; margin-top: 6px;}
+.logo-rodape{width: 50px;}
+
+
+
+/* MENU */
+.navbar ul a:hover{ font-size: large;
+    background-color:#267347;}
+    
+.nav-color{ background-color:  #267347; }
+
+/* HOME */
+.banner h2{ font-size:3.2rem !important;  text-transform: uppercase;}
+.banner p{ font-size:1.5rem; font-weight: 300; line-height: 1.8rem; }
+
+
+/* REGISTROS */
+#registros h2::after{ content: " "; display: block; width: 100%; border-top: solid; color: #267347; margin: 15px;  }
+#registros p{ line-height: 1.8rem; font-size: 1.3rem; text-align: justify; font-weight: 300;}
+
+/*ACOMPANHAMENTO*/
+.acompanhamento h2::after{ content: " "; display: block; width: 100%; border-top: solid; color: #267347; margin: 15px;  }
+.acompanhamento p{ line-height: 1.5rem; }
+.acompanhamento .card{ background-color: #267347; color: white;}
+.acompanhamento h5{ font-size: 1.2rem; text-transform: uppercase;}
+.acompanhamento h3{ font-size: 2rem; text-transform: uppercase; color: #267347;}
+
+
+/*NOVA OCORRÊNCIA*/
+.nova-ocorrencia h4{ font-size: 1.2rem; text-transform: uppercase; }
+.nova-ocorrencia h2::after{ content: " "; display: block; width: 100%; border-top: solid; color: #267347; margin: 15px;  }
+.nova-ocorrencia p{ line-height: 1.8rem; }
+.nova-ocorrencia .mapa { min-height: 500px; }
+.nova-ocorrencia .mapa iframe{ width: 100%; min-height: 500px;  border-color: #267347;}
+.nova-ocorrencia .formulario, .informacoes{ min-height: 500px; padding: 30px;}
+input[type='file'] {
+  display: none;
+}
+
+#input-file{
+  color: black;
+  position: relative;
+  cursor: pointer;
+}
+
+
+/*RODAPÉ*/
+.rodape{ padding: 7px 0; background-color: #267347; padding-bottom:1px;}
+
+/* CUSTOM */
+
+nav {
+  color: #fff;
+  background-color: #267347;
+  width: 100%;
+  height: 110px;
+  line-height: 110px;
+  font-size: 1.2rem; text-transform: uppercase; }
+
+nav.nav-extended .nav-wrapper {
+  min-height: 110px;
+  height: auto;
+}
+
+.navbar-fixed {
+  position: absolute;
+  height: 94px;
+  z-index: 997;
+}
+
+.modal-footer{
+  display: flex;
+  justify-content: center;
+
+}
+
+.modal-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.modal-close{ min-width: 150px; min-height: 40px;border-radius: 5px; font-size: 1.2rem; text-transform: uppercase;}
+.modal-close:hover{ background-color: black;}
+
+.btn:hover{ background-color: black;}
+.blue-logo, .btn {
+    background-color: #267347;
+} 
+
+
+/* NAV BAR DO MOBILE*/
+nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons {
+  display: block;
+  font-size: 36px;
+  height: 94px;
+  line-height: 110px;
+}
+
+.sidenav {
+  background-image: url("../img/plano.png");
+  margin-top: 110px;
+}
+.sidenav li>a{ color:whitesmoke; font-size: 1.2rem; text-transform: uppercase; }
+.sidenav a:hover{ color: #267347;}
+
+
+/*MEDIA*/
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 601px) {
+.banner { padding-top: 4.5rem;}
+.banner h2{font-size: 4rem;}
+
+  }
+  
+@media only screen and (min-width: 993px) {
+  .banner{ padding-top: 7rem;}
+  .banner h2{font-size:5rem; }
+ /*.container{ width: 90%;}*/
+}
+
+
+/*Home Animation*/
+/*@keyframes mudarbg{
+  40% {background-image:url("../img/olindina1.jpg");}
+  80% {background-image:url("../img/olindina2.jpg");}
+} */
